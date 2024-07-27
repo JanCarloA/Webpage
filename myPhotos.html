@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h1 {
+            color: #4a4a4a;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            max-width: 1000px;
+        }
+
+        .Photos {
+            background-color: #ffffff;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .Photos:hover {
+            transform: scale(1.5);
+        
+        }
+
+        .Photos img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <h1>Photos</h1>
+    <div class="container">
+        <div class="Photos">
+            <img src="resource/IMG_20240625_183822.jpg" alt="Photos 1">
+       
+        </div>
+        <div class="Photos">
+            <img src="resource/IMG_20240625_182840.jpg" alt="Photos 2">
+      
+        </div>
+        <div class="Photos">
+            <img src="resource/IMG_20240614_182013.jpg" alt="Photos 3">
+       
+        </div>
+    </div>
+</body>
+</html>

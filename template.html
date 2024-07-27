@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frameset Example with Top Row</title>
+    
+</head>
+
+<frameset rows="10%, 90%" >
+    <frame src="topView.html" name="TopFrame" noresize="noresize">
+        <frameset cols ="10%, 75%">
+            <frame src="leftView.html" name="leftFrame" noresize="noresize">
+            <frame src="rightView.html" name="rightFrame" noresize="noresize">
+        </frameset>
+</frameset>
+<noframes>  
+<body>
+    </body>
+</noframes>
+
+</html>
