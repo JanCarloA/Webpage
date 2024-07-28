@@ -16,7 +16,7 @@
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
-        .contact-container {
+        .contact-container, .thank-you-container{
             background-color: #AF8F6F;
             padding: 20px;
             border-radius: 10px;
@@ -25,7 +25,9 @@
             max-width: 600px;
             text-align: center;
         }
-
+        .thank-you-container {
+            display: none;
+        }
         h1 {
             margin-bottom: 20px;
         }
@@ -59,13 +61,21 @@
         button:hover {
             background-color: #5a3e23;
         }
+
+        #thank-you:target .thank-you-container {
+            display: block;
+        }
+        #thank-you:target .contact-container {
+            display: none;
+        }
+
     </style>
 </head>
 
 <body>
     <div class="contact-container">
         <h1>Contact Me</h1>
-        <form action="sendEmail.php" method="POST">
+        <form action="#thank-you" method="POST">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" required>
 
@@ -77,6 +87,12 @@
 
             <button type="submit">Send</button>
         </form>
+        <div id="thank-you">
+            <div class="thank-you-container">
+                <h1>Thank You!</h1>
+                <p>Your message has been sent successfully.</p>
+            </div>
+        </div>
     </div>
 </body>
 
