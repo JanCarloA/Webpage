@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: rgba(51, 51, 51, 0.8);
+            color: white;
+            padding: 10px;
+            width: 100px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: 0;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section h2 {
+            margin-top: 0;
+        }
+        #Mission, #Vision {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:larger ; 
+            background-color: rgb(37, 183, 127);
+            margin: 100px;
+          
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <a href="#history">History</a>
+            <a href="#location">Location</a>
+            <a href="#Mission">Mission</a>
+            <a href="#Vision">Vision</a>
+            <a href="#Photos">Photos</a>
+            <a href="#Event">Event</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+
+        <div class="content">
+            <div id="history" class="section">
+                <h2>History</h2>
+                <p>This is the history section. Add your content here.</p>
+            </div>
+            <div id="location" class="section">
+                <h2>Location</h2>
+                <p>Vira is situated at approximately 17.1187, 121.6215, in the island of Luzon. Elevation at these coordinates is estimated at 60.8 meters or 199.5 feet above mean sea level.                            </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1906.5190126480843!2d121.62176662445374!3d17.119644395275973!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1722466018907!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
+            </div>              
+            <div id="Mission" class="section">
+                <h2>Mission</h2>
+                            <p>Mapanatili ang kaayusan at kapayapaan ng ating barangay
+                                 tuloy - tuloy na pagtaguyod at mai-angat ang antas ng pamumuhay</p>
+            </div>
+            <div id="Vision" class="section">
+                <h2>Vision</h2>
+                            <p>Isang maunlad,masagana at mapayapang barangay na may nagkakaisa
+                                 at tapat na pamunuan na patuloy na nagtataguyod sa mga pangangailangan ng mga nasasakupan
+                                  tung sa isang malinis at maayos na kaaigira , mataas na antas ng pamumunuan at edukasyon.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
